@@ -30,16 +30,16 @@ Features:
 * Server health checking before tests
 
 # Basic test (10 concurrent, 100 requests, 1KB payload)
-`./load_test.sh`
+`./bash_client.sh`
 
 # Heavy load test
-`./load_test.sh -c 50 -n 1000 -z 4096`
+`./bash_client.sh -c 50 -n 1000 -z 4096`
 
 # Duration-based test (20 concurrent for 30 seconds)
-`./load_test.sh -c 20 -d 30 -z 8192 -v`
+`./bash_client.sh -c 20 -d 30 -z 8192 -v`
 
 # Save results to file
-`./load_test.sh -c 10 -n 100 -o results.txt`
+`./bash_client.sh -c 10 -n 100 -o results.txt`
 
 <H2>Setup Instructions:</H2>
 
@@ -49,9 +49,9 @@ Start the Go server:
 
 Make the bash script executable:
 
-```chmod +x load_test.sh```
+```chmod +x bash_client.sh```
 
 Run load tests:
 
-```bash./load_test.sh --help  # See all options```
-```./load_test.sh         # Run with defaults```
+```bash_client.sh --help  # See all options```
+```./bash_client.sh         # Run with defaults```
