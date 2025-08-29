@@ -53,5 +53,6 @@ Make the bash script executable:
 
 Run load tests:
 
-```bash_client.sh --help  # See all options```
-```./bash_client.sh         # Run with defaults```
+`bash_client.sh --help  # See all options`
+
+`./bash_client.sh         # Run with defaults`
